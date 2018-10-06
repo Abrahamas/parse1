@@ -28,8 +28,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func onSingin(_ sender: Any) {
-        //register()
-       // alert()
+      
     }
 
 
@@ -51,7 +50,9 @@ class LoginViewController: UIViewController {
                 print("User logged in successfully")
                 // display view controller that needs to shown after successful login
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                
             }
+
         }
     }
     func alert () {

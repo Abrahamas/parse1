@@ -21,7 +21,7 @@ class ChatViewController: UIViewController,UITableViewDelegate, UITableViewDataS
         tableView.dataSource = self
         tableView.delegate = self
         // for the cell to autoresize
-        tableView.estimatedRowHeight = 100
+        tableView.estimatedRowHeight = 50
         tableView.rowHeight = UITableViewAutomaticDimension
     }
     
@@ -42,12 +42,9 @@ class ChatViewController: UIViewController,UITableViewDelegate, UITableViewDataS
                            }
                        }
     }
-    
-
-    
     @objc func onTimer() {
         
-        Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(self.onTimer), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.onTimer), userInfo: nil, repeats: true)
      
     }
     
