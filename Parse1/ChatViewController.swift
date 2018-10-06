@@ -38,6 +38,7 @@ class ChatViewController: UIViewController,UITableViewDelegate, UITableViewDataS
                            if error == nil {
                                 // The find succeeded.
                             self.messages = objects!
+                            self.messageField.text = ""
                                self.tableView.reloadData()
                            }
                        }
